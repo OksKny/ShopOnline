@@ -4,26 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preload" href="fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="normalize.css">
     <title>ShopOnline</title>
 </head>
 
-<body>
+<body class="body">
     <header class="header">
-        <div class="container">
-            <div class="header__block">
-                <div class="header__logo">Shop<span class="header__logo-blue">Online</span></div>
-                <button href="#" class="header__menu">Меню</button>
-                <div class="header__form">
-                  <form action="#">
-                    <input class="header__input" type="search" name="search" placeholder="Я ищу..."> 
-                    <button class="header__search"><img class="header__search-img" src="assets/img/search.svg" alt=""></button>
-                  </form>
-                </div>
+        <div class="container header__container">
+          <div class="header__logo">Shop<span class="header__logo-blue">Online</span></div>
+            <button class="header__menu">Меню</button>
+            <form action="#" name="form" class="header__form">
+              <input class="header__input" type="search" name="search" placeholder="Я ищу..."> 
+              <button class="header__search"><img class="header__search-img" src="assets/img/search.svg" alt=""></button>
+            </form>
             <nav class="header__nav">
               <ul class="header__list">
                   <li class="header__item"><a class="header__link" href="#"><img class="header__icon" src="assets/img/profile.svg" alt=""> Профиль</a></li>
@@ -32,29 +29,28 @@
               </ul>  
             </nav>
           </div>
-        </div>
     </header>
 
     <main>
-      <section class="section banner">
+      <section class="section hero">
         <div class="container">
-          <div class="banner__bg">
-            <a class="banner__link" href="#">
-            <p class="banner__notebook-text">-50% на все ноутбуки</p>
-            <div class="banner__timer">
-              <div class="banner__timer-title">До конца акции:</div>
-              <div class="banner__timer-wrapper">
-                <div class="banner__timer-item">
-                  <div class="banner__timer-number">3</div>
-                  <div class="banner__timer-text">дня</div>
+          <div class="hero__bg">
+            <a class="hero__link" href="#">
+            <p class="hero__notebook-text">-50% на все ноутбуки</p>
+            <div class="hero__timer">
+              <div class="hero__timer-title">До конца акции:</div>
+              <div class="hero__timer-wrapper">
+                <div class="hero__timer-item">
+                  <div class="hero__timer-number">3</div>
+                  <div class="hero__timer-text">дня</div>
                 </div>      
-                <div class="banner__timer-item">
-                  <div class="banner__timer-number">8</div>
-                  <div class="banner__timer-text">часов</div>
+                <div class="hero__timer-item">
+                  <div class="hero__timer-number">8</div>
+                  <div class="hero__timer-text">часов</div>
                 </div>     
-                <div class="banner__timer-item">
-                  <div class="banner__timer-number">43</div>
-                  <div class="banner__timer-text">минуты</div>
+                <div class="hero__timer-item">
+                  <div class="hero__timer-number">43</div>
+                  <div class="hero__timer-text">минуты</div>
                 </div>                        
               </div>
             </div>            
@@ -67,22 +63,22 @@
         <div class="container">
           <ul class="gallery__list">
             <li class="gallery__item gallery__item-group-first">
-              <a href="#" class="gallery__card gallery__card-01"><p class="gallery__card-text-small"><b>Книга</b> – лучший подарок</p></a>
-              <a href="#" class="gallery__card gallery__card-02"><p class="gallery__card-text-small gallery__card-text-small-top">Время скидок!</p><p class="gallery__card-sale gallery__card-sale-bottom">-25%</p></a>
-              <a href="#" class="gallery__card gallery__card-03"><p class="gallery__card-sale gallery__card-sale-top">-40%</p></a>
+              <a href="#" class="gallery__card gallery__card-01"><p class="gallery__card-text-01 gallery__card-text-small"><span class="gallery__card-text">Книга</span> – лучший подарок</p></a>
+              <a href="#" class="gallery__card gallery__card-02"><p class="gallery__card-text-02 gallery__card-text-small gallery__card-text-small-top">Время скидок!</p><p class="gallery__card-sale gallery__card-sale-bottom">-25%</p></a>
+              <a href="#" class="gallery__card gallery__card-two-column gallery__card-03"><p class="gallery__card-sale gallery__card-sale-top">-40%</p></a>
             </li>
-            <li class="gallery__item_one_column"> 
-                <a href="#" class="gallery__card gallery__card-04"><p class="gallery__card-text gallery__card-text-blue">Вторая пара кроссовок <b>В ПОДАРОК!</b></p></a>
+            <li class="gallery__item gallery__item-two-rows"> 
+                <a href="#" class="gallery__card gallery__card-04"><p class="gallery__card-text-blue">Вторая пара кроссовок<b> В ПОДАРОК!</b></p></a>
             </li>
-            <li class="gallery__item gallery__item-group-second">
-              <a href="#" class="gallery__card gallery__card-05"><p class="gallery__card-text">Идеи новогодних подарков</p></a>
-              <a href="#" class="gallery__card gallery__card-06"><p class="gallery__card-text gallery__card-text-small-bottom" >Выгодно в декабре!</p><p class="gallery__card-sale gallery__card-sale-bottom">-15%</p></a>
+            <li class="gallery__item gallery__item-group-two">
+              <a href="#" class="gallery__card gallery__card-two-column gallery__card-05"><p class="gallery__card-text-05 gallery__card-text">Идеи новогодних подарков</p></a>
+              <a href="#" class="gallery__card gallery__card-two-column gallery__card-06"><p class="gallery__card-text-06 gallery__card-text" >Выгодно в декабре!</p><p class="gallery__card-sale gallery__card-sale-bottom">-15%</p></a>
             </li>
-            <li class="gallery__item_two_column">
-                <a href="#" class="gallery__card gallery__card-07"><p class="gallery__card-text-red">Новогодние украшения</p></a>
+            <li class="gallery__item-two-column">
+                <a href="#" class="gallery__card gallery__card-big gallery__card-07"><p class="gallery__card-text-red">Новогодние украшения</p></a>
             </li>
-            <li class="gallery__item gallery__item_group-last">
-              <a href="#" class="gallery__card gallery__card-08"><p class="gallery__card-sale gallery__card-sale-bottom">-55%</p></a>
+            <li class="gallery__item gallery__item-group-last">
+              <a href="#" class="gallery__card gallery__card-two-rows gallery__card-08"><p class="gallery__card-sale gallery__card-sale-bottom">-55%</p></a>
               <a href="#" class="gallery__card gallery__card-09"><p class="gallery__card-text-small gallery__card-text-small-bottom">На бытовую химию</p><p class="gallery__card-sale gallery__card-sale-top">-25%</p></a>
               <a href="#" class="gallery__card gallery__card-10"></a>
             </li>

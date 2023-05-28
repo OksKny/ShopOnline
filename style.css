@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Lato';
+    src: local("Lato"), local("Lato-Regular"), 
+    url('fonts/lato-regular.woff2') format("woff2"), 
+    url('fonts/lato-regular.woff') format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local("Lato Bold"), local("Lato-Bold"), 
+    url('fonts/lato-bold.woff2') format("woff2"), 
+    url('fonts/lato-bold.woff') format("woff");
+    font-weight: 700;
+    font-display: swap;
+}
+
 html {
     position: relative;
     box-sizing: border-box;
@@ -9,8 +27,8 @@ html {
     box-sizing: inherit;
 }
 
-body { 
-    font-family: 'Lato', sans-serif;
+.body { 
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-weight: 400;
     background-color: #FFFFFF;
     color: #FFFFFF; 
@@ -59,9 +77,9 @@ iframe {
 }
 
 .container {
-    max-width: 1770px;
+    max-width: 1870px;
     margin: 0 auto;
-    padding: 0 25px;
+    padding: 0 50px;
 }
 
 .section {
@@ -71,7 +89,7 @@ iframe {
 
 @media(max-width: 1024px) {
     .container {
-        padding: 0 20px;
+        padding: 0 42px;
     }
 
     .section {
@@ -81,7 +99,7 @@ iframe {
 
 @media(max-width: 768px) {
     .container {
-        padding: 0 15px;
+        padding: 0 34px;
     }
 
     .section {
@@ -91,7 +109,7 @@ iframe {
 
 @media(max-width: 320px) {
     .container {
-        padding: 0 10px;
+        padding: 0 20px;
     }
 
     .section {

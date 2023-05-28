@@ -1,4 +1,4 @@
-.banner__bg {
+.hero__bg {
     background-image: url("assets/img/banner.jpg");
     background-position: center;
     background-size: cover;
@@ -6,127 +6,127 @@
     background-repeat: no-repeat;
     border-radius: 20px;
     display: block;
-    padding: 145px 112px 49px;
+    padding: 149px 111px 34px;
 }
 
-.banner__link {
+.hero__link {
     display: flex;
     flex-direction: column;
 }
 
-.banner__timer {
+.hero__timer {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.banner__timer-wrapper {
+.hero__timer-wrapper {
     display: flex;
 }
 
-.banner__timer-item {
+.hero__timer-item {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     margin-right: 30px;
 }
 
-.banner__timer-item:last-child {
+.hero__timer-item:last-child {
     margin: 0;
 }
 
 
-.banner__notebook-text {
+.hero__notebook-text {
     font-weight: 700;
     font-size: 70px;
     line-height: 130%;
-    margin-bottom: 100px;
+    margin-bottom: 95px;
 }
 
-.banner__timer-title {
+.hero__timer-title {
     font-weight: 700;
     font-size: 16px;
     line-height: 130%;
 }
 
-.banner__timer-number {
+.hero__timer-number {
     font-weight: 700;
     font-size: 60px;
     line-height: 130%;
     padding-right: 6px;
 }
 
-.banner__timer-text {
+.hero__timer-text {
     font-weight: 700;
     font-size: 32px;
     line-height: 130%;
 }
 
 @media(max-width: 1024px) {
-    .banner__bg {
+    .hero__bg {
         padding: 92px 112px 60px;
     }
 
-    .banner__notebook-text {
+    .hero__notebook-text {
         font-size: 40px;
         margin-bottom: 11px;
         max-width: 320px;
     }
 
-    .banner__timer-number {
+    .hero__timer-number {
         font-size: 40px;
         padding-right: 6px;
     }
 
-    .banner__timer-text {
+    .hero__timer-text {
         font-size: 20px;
     }
 }
 
 @media(max-width: 768px) {
 
-    .banner__notebook-text {
+    .hero__notebook-text {
         font-size: 30px;
         margin-bottom: 82px;
     }
 
-    .banner__timer-number {
+    .hero__timer-number {
         font-size: 30px;
         padding-right: 6px;
     }
 
-    .banner__timer-text {
+    .hero__timer-text {
         font-size: 16px;
     
     }
 }
 
-@media(max-width: 320px) {
+@media(max-width: 500px) {
 
-    .banner__bg {
+    .hero__bg {
         padding: 44px 29px 30px;
     }
 
-    .banner__timer-item {
+    .hero__timer-item {
         margin-right: 8px;
     }
 
-    .banner__notebook-text {
+    .hero__notebook-text {
         font-size: 22px;
         margin-bottom: 189px;
     
     }
 
-    .banner__timer-title {
+    .hero__timer-title {
         font-size: 8px;
     }
 
-    .banner__timer-number {
+    .hero__timer-number {
         font-size: 20px;
         padding-right: 2px;
     }
 
-    .banner__timer-text {
+    .hero__timer-text {
         font-size: 12px;
     
     }
